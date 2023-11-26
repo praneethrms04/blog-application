@@ -11,7 +11,7 @@ const Navbar = () => {
         </Link>
           <p className='text-sm font-normal'>Exploring tommorow&apos;s innovations,<br /> One Bite at a time</p>
       </div>
-      <Link href={"signin"}>
+      <Link href={"/sign-in"}>
         <div className="btn">Sign in</div>
       </Link>
     </div>
