@@ -5,9 +5,9 @@ import * as assets from "../assets"
 
 const SignInButtons = () => {
   return (
-      <div className="mt-4 p-4 flex flex-col items-center justify-center gap-4">
+      <div className="mt-2 lg:mt-4 p-4 flex flex-col items-center justify-center gap-4">
         <button
-          className="flex items-center border p-4 rounded-full gap-4 hover:bg-slate-100/25 transition"
+          className="flex items-center border p-3 lg:p-4 rounded-full gap-4 hover:bg-slate-100/25 transition"
         >
             <Image
               src={assets.githublogo}
@@ -19,7 +19,7 @@ const SignInButtons = () => {
         </button>
 
         <button
-          className="flex items-center border p-4 rounded-full gap-4 hover:bg-slate-100/25 transition"
+          className="flex items-center border p-3 lg:p-4 rounded-full gap-4 hover:bg-slate-100/25 transition"
         >
             <Image
               src={assets.googlelogo}

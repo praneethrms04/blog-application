@@ -3,6 +3,44 @@
 @tailwind utilities;
 
 
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+
+.embla-thumbs {
+  --thumbs-slide-spacing: 0.8rem;
+  --thumbs-slide-height: 9rem;
+  margin-top: var(--thumbs-slide-spacing);
+}
+
+.embla-thumbs__viewport {
+  overflow: hidden;
+}
+
+.embla-thumbs__container {
+  display: flex;
+  flex-direction: row;
+}
+
+.embla-thumbs__slide--selected .embla-thumbs__slide__button {
+  opacity: 1;
+}
+
+.embla-thumbs__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+  padding-left: 0.5rem;
+  padding-left: var(--thumbs-slide-spacing);
+  position: relative;
+}
+
 
 @layer base {
    .h1 {
@@ -11,6 +49,10 @@
    .h2 {
       @apply text-slate-900 text-3xl font-bold tracking-tighter
    }
+   .h4 {
+      @apply text-slate-900 text-xl font-bold tracking-normal
+   }
+
 }
 
 
@@ -18,4 +60,11 @@
    .btn {
       @apply bg-slate-300 px-4 py-2 rounded-md font-semibold hover:scale-105 transition
    }
+   .category-btn {
+      @apply bg-gradient-to-r from-teal-300 via-blue-300 to-blue-400 px-4 py-2 rounded-md  font-semibold
+   }
+   .link {
+       @apply text-violet-500 font-bold max-w-full truncate;
+   }
+
 }
